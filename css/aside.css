@@ -13,7 +13,6 @@ aside{
 }
 
 #bil{
-
   width: 60%;
   height: 20%;
 }
@@ -27,10 +26,28 @@ aside{
   height: 20%;
 
 }
+#annons5{
+  margin-bottom: 5%;
+}
+#annons6{
+  margin-bottom: 5%;
+}
 
-#annons1{
-  margin-bottom: 5%;
-}
-#annons2{
-  margin-bottom: 5%;
-}
+  .fixed {
+   position: fixed;
+   top: 0;
+
+ }
+ body{
+   height: 1100px;
+ }
+ @media screen and (max-width: 850px) {
+
+   aside{
+     width: 100%;
+     height: auto;
+   }
+   .fixed {
+      position: absolute;
+      top:auto;
+ }

@@ -25,19 +25,18 @@
     <div id="mainAsideWrapper">
         <main></main>
         <aside>
-          <div id="annons1">
+          <div id="annons5">
           <h1>Senaste:</h1>
           <img id = "bil" src="biler/bil.jpg" alt="bil">
           <br>
           Bil 10000 kr
         </div>
-        <div id="annons2">
+        <div id="annons6">
           <img id="gaffel"src="biler/gaffel.jpg" alt="gaffel">
           <br>
           Gaffel 100 kr
         </div>
-        <div id="annons3">
-
+        <div id="annons7">
           <img id="gaffeltruck" src="biler/gaffeltruck.jpg" alt="Gaffeltruck">
           <br>
           Gaffeltruck 5000 kr
@@ -48,5 +47,16 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    var aside = document.querySelector('aside');
+    var origOffsetY = aside.offsetTop;
+
+    function onScroll(e) {
+      window.scrollY >= origOffsetY ? aside.classList.add('fixed') :
+                                      aside.classList.remove('fixed');
+    }
+
+    document.addEventListener('scroll', onScroll);
+    </script>
 </body>
 </html>
