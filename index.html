@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/aside.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/master.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
@@ -26,29 +23,32 @@
         <aside>
           <div id="annons5">
           <h1>Senaste:</h1>
-          <img id = "bil" src="biler/bil.jpg" alt="bil">
-          <br>
-          Bil 10000 kr
-        </div>
-        <div id="annons6">
-          <img id="gaffel"src="biler/gaffel.jpg" alt="gaffel">
-          <br>
-          Gaffel 100 kr
-        </div>
-        <div id="annons7">
-          <img id="gaffeltruck" src="biler/gaffeltruck.jpg" alt="Gaffeltruck">
-          <br>
-          Gaffeltruck 5000 kr
-        </div>
-
-
+          <img id = "bil" src="bilder/bil.jpg" alt="bil">
+            <div class="Titlepricewrapper">
+              <p>Bil</p>
+              <p>10000kr</p>
+            </div>
+          </div>
+          <div id="annons6">
+            <img id="gaffel"src="bilder/gaffel.jpg" alt="gaffel">
+            <div class="Titlepricewrapper">
+              <p>Gaffel</p>
+              <p>100kr</p>
+            </div>
+          </div>
+          <div id="annons7">
+            <img id="gaffeltruck" src="bilder/gaffeltruck.jpg" alt="Gaffeltruck">
+            <div class="Titlepricewrapper">
+              <p>Gaffeltruck</p>
+              <p>5000kr</p>
+            </div>
+          </div>
         </aside>
 
         <main>
-
           <div id="annons1">
             <img id="bil1" src="bilder/download.jpg" alt="bild på bil">
-            <div class="Titleprizewrapper">
+            <div class="Titlepricewrapper">
               <p>title</p>
               <p>5000kr</p>
 
@@ -57,8 +57,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptates cupiditate vel exercitationem omnis eaque corrupti in doloribus recusandae blanditiis reprehenderit nesciunt molestiae ratione velit, deserunt aspernatur quis! Laudantium ipsum vel esse tempore sit officia, inventore excepturi consequatur eveniet quisquam nisi molestias harum consequuntur illo amet minima ab rerum, recusandae soluta obcaecati sint. Aliquid tempora aperiam, velit, sed voluptatibus reiciendis accusamus deserunt unde, dolor hic ducimus nesciunt distinctio architecto natus modi. Voluptatem deserunt voluptatibus cumque!</p>
           </div>
           <div id="annons2">
-            <img id="bil1" src="bilder/download.jpg" alt="bild på bil">
-            <div class="Titleprizewrapper">
+            <img id="bil1" src="bilder/gaffel.jpg" alt="bild på bil">
+            <div class="Titlepricewrapper">
               <p>title</p>
               <p>5000kr</p>
 
@@ -67,8 +67,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis reprehenderit perferendis quidem! Delectus exercitationem aspernatur at itaque placeat deserunt dicta qui. Ab quidem quibusdam culpa eaque, unde accusamus rem, quos quia cumque, quas molestiae iste! Consectetur, eaque. Veniam quia consectetur incidunt nobis, neque debitis recusandae aspernatur labore earum illo culpa soluta molestias nulla rerum reprehenderit, iure aperiam dolore, hic accusamus adipisci harum quibusdam nesciunt fugiat consequuntur. Totam hic sequi blanditiis repellendus, dignissimos quo. Ad?</p>
           </div>
           <div id="annons3">
-            <img id="bil1" src="bilder/download.jpg" alt="bild på bil">
-            <div class="Titleprizewrapper">
+            <img id="bil1" src="bilder/gaffeltruck.jpg" alt="bild på bil">
+            <div class="Titlepricewrapper">
               <p>title</p>
               <p>5000kr</p>
 
@@ -77,8 +77,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique incidunt veniam laboriosam beatae, placeat quis ad voluptatum obcaecati libero maiores! Exercitationem eaque illo corporis dicta dolorum laborum ex harum quod doloremque. Dolorum eaque sapiente blanditiis necessitatibus, nulla libero ea omnis animi incidunt minus, minima excepturi, eius error voluptates odit ipsa odio eligendi magni nam maxime molestias. Magni repellat dolores expedita voluptate praesentium eius explicabo.</p>
           </div>
           <div id="annons4">
-            <img id="bil1" src="bilder/download.jpg" alt="bild på bil">
-            <div class="Titleprizewrapper">
+            <img id="bil1" src="bilder/bil.jpg" alt="bild på bil">
+            <div class="Titlepricewrapper">
               <p>title</p>
               <p>5000kr</p>
 
@@ -89,18 +89,11 @@
 
         </main>
     </div>
+    <footer>
+      <p>Contact Us : +46 75-251-51-20</p>
+      <p>Email: example@mail.com</p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-    var aside = document.querySelector('aside');
-    var origOffsetY = aside.offsetTop;
-
-    function onScroll(e) {
-      window.scrollY >= origOffsetY ? aside.classList.add('fixed') :
-                                      aside.classList.remove('fixed');
-    }
-
-    document.addEventListener('scroll', onScroll);
-    </script>
 </body>
 </html>
