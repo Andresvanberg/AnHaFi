@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background-color: #4d4d4d;
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    width: 100vw;
+    color: #f5f5f5;
+    padding: 20px;
+    height: 50px;
+    margin-top: 20px;
+    border-top:2px solid #f5f5f5;
+
+}
+footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+/*FROM HERE NAV.CSS*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4d4d4d;
+    color: #f5f5f5;
+    border-bottom:2px solid #f5f5f5;
+}
+#navLinks{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#navLinks a{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-align: center;
+}
+/*FROM HERE MAIN.CSS*/
+#annons1{
+    grid-area:a1;
+    margin: 20px;
+    border:2px solid #f5f5f5;
+    color: #f5f5f5;
+  
+}
+#annons2{
+    grid-area:a2;
+    margin: 20px;
+    border:2px solid #f5f5f5;
+    color: #f5f5f5;
+    
+}
+    #annons3{
+    grid-area:a3;
+    margin: 20px;
+    border:2px solid #f5f5f5;
+    color: #f5f5f5;
+    
+}
+#annons4{
+    grid-area:a4;
+    margin: 20px;
+    border:2px solid #f5f5f5;
+    color: #f5f5f5;
+    
+}
+    main{
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "a1 a2"
+    "a3 a4";
+    width: 68vw;
+    border:2px solid #f5f5f5;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    }
+  .Titlepricewrapper{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+  }
+  .Titlepricewrapper p{
+  font-size: 1.3rem;
+  }
+  #bil1{
+    width: 100%;
+  }
+  
+  #mainAsideWrapper{
+  display: flex;
+  flex-direction: row;
+  }
+  /*FROM HERE ASIDE.CSS*/
+  aside{
+    position: absolute;
+    top: auto;
+    right: 0;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #4d4d4d;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #bil{
+    width: 100%;
+    height: auto;
+  }
+  
+  #gaffel{
+    width: 100%;
+    height: auto;
+  }
+  #gaffeltruck{
+    width: 100%;
+    height: auto;
+  
+  }
+  #annons5{
+    width: 60%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #annons6{
+    width: 60%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #annons7{
+    width: 60%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /*
+    .fixed{
+     position: fixed;
+     top: 0;
+   }
+*/
+
+@media screen and (max-width: 850px) {
+    nav{
+        text-align: center;
+        flex-direction: column;
+    }
+    #navLinks{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main{
+        margin-top: 140vh;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4";
+    }
+  
+    #mainAsideWrapper{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        height: auto;
+    }
+    /*
+    .fixed {
+        position: absolute;
+    }*/
+  }
+  
