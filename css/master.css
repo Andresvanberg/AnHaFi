@@ -181,9 +181,6 @@ aside {
   }
 }
 @media screen and (max-width: 850px) {
-  header {
-    flex-direction: column;
-  }
   header h2 {
     width: 100%;
   }
@@ -192,24 +189,34 @@ aside {
   }
   #hamburger {
     display: block;
+    margin-left: 20vw;
+    margin-top: 25px;
+    margin-bottom: auto;
   }
 
   ul {
     position: fixed;
-    overflow: scroll;
-    top: 150px;
-    height: 120vh;
-    right: -120vw;
+    justify-content: flex-start;
+    top: 90px;
+    height: 100vh;
+    right: -110vw;
     width: 100vw;
     background-color: #f5f5f5;
     flex-direction: column;
     text-align: center;
   }
   ul li {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    padding: 25px 50px;
+    width: 50%;
     border-bottom: 2px solid #4d4d4d;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   ul li a {
+    font-size: 1.5rem;
     color: #4d4d4d;
   }
 
