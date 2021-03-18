@@ -207,9 +207,9 @@ aside {
   ul {
     position: fixed;
     justify-content: flex-start;
-    top: 75px;
+    top: 60px;
     height: 100vh;
-    right: -110vw;
+    right: -100vw;
     width: 100vw;
     background-color: #f5f5f5;
     flex-direction: column;
