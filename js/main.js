@@ -14,9 +14,7 @@ document.addEventListener('scroll', onScroll);
 navBTN.addEventListener('click', ()=>{
   if(navlist.style.right < "-20vw"){
     navlist.style.right = "-5vw"
-    navBTN.innerHTML ="<h1>X</h1>"
   }else{
     navlist.style.right = "-110vw"
-    navBTN.innerHTML ="<div id='hamburger1'></div><div id='hamburger2'></div><div id='hamburger3'></div>"
   }
 });
