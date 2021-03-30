@@ -10,11 +10,12 @@ function onScroll(e) {
 
 document.addEventListener('scroll', onScroll);
 
-
+/*
 navBTN.addEventListener('click', ()=>{
   if(navlist.style.right < "-20vw"){
-    navlist.style.right = "-5vw"
+    navlist.style.right = "0vw"
   }else{
     navlist.style.right = "-110vw"
   }
 });
+*/
